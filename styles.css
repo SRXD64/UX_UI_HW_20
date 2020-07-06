@@ -1,0 +1,248 @@
+/* Master Styles */
+
+body {
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+h2,
+h3 {
+    color: rgb(0, 0, 0);
+}
+
+p {
+    font-size: 16px;
+    color: goldenrod;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    align-items: center;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    color: goldenrod;
+}
+
+
+/* Navigation Styles */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background-color: black;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper>.left-side>div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid goldenrod;
+}
+
+.nav-link-wrapper a:hover {
+    color: white;
+}
+
+.brand {
+    color: white;
+}
+
+.brand:hover {
+    color: goldenrod;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 2s;
+    font-size: 28px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.dropdown {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.dropdown-item:hover {
+    color: white;
+}
+
+.dropdown:hover {
+    border-bottom: 1px solid goldenrod;
+}
+
+.dropdown-item:focus-within {
+    background: #8a8a8a;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Portfolio Styles  */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 600px;
+    width: 100%;
+}
+
+.bar {
+    background-image: url(images/FG-BarStreet1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dea {
+    background-image: url(images/FG-DEAmainpageSS.png);
+}
+
+.wmn {
+    background-image: url(images/womanincBefore.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: 0.5s all ease-in;
+}
+
+.logo-wrapper:hover img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600px;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: goldenrod;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(5%);
+}
+
+*/
+/* UX Skills and Work Styles */
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.itemBar {
+    grid-area: row1;
+}
+
+.itemDEA {
+    grid-area: row2;
+}
+
+.itemWomen {
+    grid-area: row3;
+}
+
+.itemWomen>img {
+    width: 50%;
+    height: 50%;
+}
+
+.workGrid {
+    display: grid;
+    margin: 0px 5%;
+    grid-template-areas: 'row1' 'row2' 'row3';
+}
+
+
+/* Footer */
+
+footer>ul {
+    display: flex;
+    /* vertical-align: top; */
+    justify-content: center;
+    background-color: black;
+    padding: 10px;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 600) {
+    .flexContainer {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+    }
+}

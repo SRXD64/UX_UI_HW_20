@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UX/UI Homework 20</title>
+    <meta charset="utf-8" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div>
+                    <li class="dropdown">Projects
+                        <li class="dropdown-item">
+                            <!-- <a href="#">-->Barscape (Mobile App)</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <!-- <a href="#">-->DEA (Mobile/Webpage)</a>
+                        </li>
+                        <li class="dropdown-item"><a href="projectWomanINC.html">Woman Inc (Mobile/Webpage)</a></li>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>David Pendleton</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- About Me Section -->
+    <section class="heroImg">
+        <div class="content">
+            <img src="images/logo.png">
+
+            <h2>About Me</h2>
+            <p>Well hello there. My name is David and I'm an avid sports enthusiast and nerd at heart. Designing websites and apps has become a passion of mine and I hope this journey takes me to a company that's aligned with my favorite interests: sports
+                and videogames.</p>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background bar"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/Barscape1.png" alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        With a group we constructed an app that finds the best bars within a user's defined range.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background dea"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/DEA.png" alt="">
+                    </div>
+
+                    <div class="subtitle">
+                        Reorganized the DEA website to provide visitors with a more streamlined service to demonstrate how the DEA directly handles the war on drugs.
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background wmn"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/WomenINC-Desktop.png" alt="" style="width:450px;height:375px;">
+                    </div>
+
+                    <div class="subtitle">
+                        With a group we redesigned a website specifically for women who needed help in dealing with abusive relationships. The website's layout was an eyesore and lacked direction and organization of resources.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  My UX Skills section coded using CSS flex -->
+    <section class="mySkills">
+        <h1>My UX Skills</h1>
+        <div class="flexContainer">
+            <div>
+                <img src="images/icons/prototyping.png">
+                <h3>Prototyping</h3>
+                <p>Testing and evaluating the final outcome is exciting with each little tweak done to the page as a whole.
+                </p>
+            </div>
+            <div>
+                <img src="images/icons/copywriting.png">
+                <h3>Copy Writing</h3>
+                <p>Besides a lovely image, it takes talent to craft words that capture the moment and sell it.
+                </p>
+            </div>
+            <div>
+                <img src="images/icons/scenario.png">
+                <h3>Scenario Design</h3>
+                <p>Empathy: the understanding of a user's feelings and re-creating that to appeal to the masses.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- My Projects -->
+    <!-- <section class="myWork">
+                <h1>My Work</h1>
+                <div class="workGrid">
+                    <div class="itemBar">
+                        <img src="images/Barscape1.png">
+                        <div>
+                            <h4>Barscape</h4>
+                            <p>This is a mobile app that allows the user to find the best bars that are close by and meets their preferences.</p>
+                            <button>View Project</button>
+                        </div>
+                    </div>
+                    <div class="itemDEA">
+                        <img src="images/DEA.png">
+                        <div>
+                            <h4>DEA</h4>
+                            <p>Reorganized the DEA website to provide visitors with a more streamlined service to demonstrate how the DEA directly handles the war on drugs.</p>
+                            <button>View Project</button>
+                        </div>
+                    </div>
+                    <div class="itemWomen">
+                        <img src="images/WomenINC-Desktop.png">
+                        <div>
+                            <h4>Women INC</h4>
+                            <p>With a group we redesigned a website specifically for women who needed help in dealing with abusive relationships. The website's layout was an eyesore and lacked direction and organization of resources.</p>
+                            <button>View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <button><h3>View All Projects</h3></button>
+            </section> -->
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><img src="images/gmail.png" </li>
+                <!-- ADD MODAL UPON CLICK -->
+                <li>
+                    <a href="https://www.instagram.com/the_real_dp24/">
+                        <img src="images/instagram.png" </a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/davidependleton24/">
+                        <img src="images/linkedin.png" </a></li>
+        </ul>
+    </footer>
+
+    </div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+
+        })
+    })
+</script>
+
+</html>
+
+
+</body>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
